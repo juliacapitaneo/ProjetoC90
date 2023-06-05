@@ -37,6 +37,14 @@ export default class StarMapScreen extends Component {
                         this.setState({ latitude: text });
                     }}
                 />
+                <TextInput
+                    style={styles.inputStyle}
+                    placeholder="Digite sua longitude"
+                    placeholderTextColor="white"
+                    onChangeText={(text) => {
+                        this.setState({ longitude: text });
+                    }}
+                />
             </View>
         );
     }
